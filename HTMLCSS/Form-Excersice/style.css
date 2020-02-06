@@ -1,0 +1,37 @@
+body{
+	font-family: sans-serif;
+	background: #98b4e0;
+}
+.form-wrap{
+	box-sizing: border-box;
+	background-color: #06193a;
+	max-width:300px;
+	margin: auto	
+}
+.title-wrap{
+	margin-top: 40px;
+	color: white;	
+	text-align: center;
+	text-decoration: underline;
+
+}
+input{
+	margin-left:60px;	
+	width: 60%;
+	background: none;
+	border:1px solid white;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+h4{
+	text-align: center;
+	color: white;
+}
+input[type="button"]{
+	background-color:#f2e465;
+
+}
+input[type="button"]:hover{
+	background-color:#95a320;
+	
+}

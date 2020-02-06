@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+html
+{
+	
+	font-size: 14px;
+	font-family: sans-serif;
+background-image: url("conorblur.jpg");
+
+}
+
+
+
+body
+{  
+
+    margin: 0px; 
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p
+{
+	margin: 5px 0 0 0;
+	padding: 5px 0;
+	text-align: justify;
+}
+
+#container
+{
+  width: 60%;
+  margin: 0px auto;
+ 
+}
+
+header
+{  
+  height: 40px;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  border:1px solid white;
+}
+
+.firstnav
+{  
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 5px;
+	color:white;
+}
+.line{
+	color:white;
+}
+
+
+nav ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li 
+{
+	display: inline-block;
+	padding: 5px;
+}
+
+nav ul li:hover 
+{
+	background: rgb(244, 60, 36,0.5);
+	cursor: pointer;
+	border-radius: 2px;
+	border-color:2px white;
+}
+
+nav ul li a 
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.ufcdesc{
+	color:red;
+}
+
+aside
+{  
+	position: absolute;
+	top:15%;
+	right:15%;
+  float: left; 
+  width: 170px; 
+  margin-top: 5px;
+  color:white;
+}
+
+.moreinfo
+{
+	
+	margin-top: 5px;
+}
+
+.moreinfo article 
+{
+	padding: 0 5px;
+}
+
+#title
+{
+	float: left;
+	display: inline-block;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+#title h2 a 
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#search
+{
+	float: right;
+	margin: 10px 10px 0 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	padding-left: 2px;
+}
+#search:hover{
+	border:1px solid red;
+}
+img
+{
+	float: left;
+	margin-right: 10px;
+	padding-top: 5px;
+}
+
+.align-right
+{
+	float: right;
+}
+
+.button
+{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 10px;
+	background: rgb(244, 60, 36,0.5);
+	border: 1px solid white;
+	border-radius: 3px;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.button:hover
+{
+	cursor: pointer;
+	box-shadow: 2px 3px #cccccc;
+}
+
+/*main article
+{
+	margin: 5px 0;
+	border-top: 1px solid black;
+}*/
+.articleinfo{
+	color:white;
+	s
+}
+.introduction{
+	color:white;
+}
+.articleinfo:hover{
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 15px;
+}
+.heading{
+	color:red;
+}
+
+
+main
+{
+    float: left;
+    width: 786px;
+    font-size: 16px;
+	margin-right: 10px;
+}﻿
+.link{
+	font-size: 10px;
+}
+.asidelink:hover{
+	background-color: rgb(89, 255, 252,0.5);
+	border: 1px solid red;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.right{
+	position: absolute;
+	right:32%;
+	top:12.2%;
+
+}
+
+.middle{
+	position: absolute;
+	right: 50%;
+	top :12.2%;
+}
+.downleft{
+	position: absolute;
+	top:60%;
+
+}
+.downmiddle{
+	position: absolute;
+	top:60%;
+	right:50%;
+}
+.downright{
+	position: absolute;
+	top:60%;
+	right:38%;
+}
+.fontcol{
+	color:white;
+}
+.list{
+	padding-top: 5px;
+}
+.topleft{
+	position: absolute;
+	top:20%;
+	left:10%;
+}
+.topright{
+	position: absolute;
+	top:20%;
+	right:10%;
+}
+.downleft{
+	position: absolute;
+	top:80%;
+	left:10%;
+}
+.downright{
+	position: absolute;
+	top:80%;
+	right:10%;
+}
+.gallery{
+	position: absolute;
+	right:50%;
+	color: red;
+}

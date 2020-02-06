@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="C:/Users/Aspire VX/Desktop/Web/HTMLCSS/Forma kursova/style.css">
+	<title>Login/Registration Form</title>
+	<script type="text/javascript">
+		function validation(){
+		var Ime = document.login.Name1.value;
+		var Surname11 = document.login.Surname1.value;
+		var Username11 = document.login.username.value;
+		var Email11 = document.login.Email1.value; 
+		var Password11 = document.login.Password1.value;
+		var ConfirmPassword11 = document.login.ConfirmPassword1.value;
+		var Mobilephone1 = document.login.mobilephone.value;
+		var CaptchaInput11 = document.login.CaptchaInput.value;
+		
+		if(Name1= "" ||  Surname11 =="" || Email11 =="" || Password11 =="" || ConfirmPassword11 =="" || Username11 ==""|| Mobilephone1 =="" ){
+			alert("You must fill all the empty fields!");
+			return;
+		}
+		if(Password11.length<6 || Password11.length>12){
+			alert("Your password must be between 6 and 12 characters")
+			return false;
+		}
+		if(Password11 != ConfirmPassword11){
+			alert("You should match your password");
+			return;
+		}
+		if(Mobilephone1.length > 10 || Mobilephone1.length<10){
+			alert("You should enter a valid 10 digid number in this field");
+			return;
+
+		}
+		if( CaptchaInput11 != "51423480"){
+			alert("You should enter a valid Captcha");
+			return;
+
+		}
+
+
+		
+		return true;
+	
+	</script>
+}
+
+		}
+	</script>
+		
+</head>
+<body>
+	<div class="login-page">
+	<div class="form-style">
+		<form class="register" name="login"  onsubmit="return validation()" method="GET"  >s
+			<label>Name</label></br>
+			<hr class="afterline">
+			<input type="text" placeholder="First" name="Name1"  id ="Ime" class="inputedit"  maxlength="15" required >
+			<input type="text" placeholder="Last" name="Surname1" class="inputedit" required  maxlength="15"></br>
+			<label>Choose your username</label></br>
+			<hr class="afterline">
+			<input type="text" name="username" class="inputedit" required maxlength="15"></br>
+			<label>E-mail adress</label></br>
+			<hr class="afterline">
+			<input type="email"  name="Email1" placeholder="@gmail.com" class="inputedit" required maxlength="20"></br>
+			<label>Password</label></br>
+			<hr class="afterline">
+			<input type="password"  name="Password1" class="inputedit" required maxlength="12"></br>
+			<label>Confirm Password</label></br>
+			<hr class="afterline">
+			<input type="password"  name="ConfirmPassword1" class="inputedit" required maxlength="12"></br>
+			<div>
+				<label>Geder</label></br>
+				<hr class="afterline">
+					<input type="radio" name="radio1" class="radio">Male</button>
+					<input type="radio" name="radio2" class="radio">Female</button>
+			</div>
+
+			<div class="dateselector">
+				<label>Birthdate</label></br>
+				<hr class="afterline">
+				<select name="birthdate"  placeholder="month" required>
+					<option value ="January">January</option>
+					<option value ="February">February</option>
+					<option value ="Mart">Mart</option>
+					<option value ="April">April</option>
+					<option value ="May">May</option>
+					<option value ="June">June</option>
+					
+				</select>
+				<select name="day" placeholder="day" required>
+					<option value ="1">1</option>
+					<option value ="2">2</option>
+					<option value ="3">3</option>
+					<option value ="4">4</option>
+					<option value ="5">5</option>
+					<option value ="6">6</option>
+					
+				</select>
+				<select name="year" placeholder="year" required>
+					<option value ="1998">1998</option>
+					<option value ="1999">1999</option>
+					<option value ="2000">2000</option>
+					<option value ="2001">2001</option>
+					<option value ="2002">2002</option>
+					<option value ="2003">2003</option>
+					
+				</select>
+			</div>
+			<label>Mobilephone</label></br>
+			<hr class="afterline">
+			<input type="text" placeholder="phone"  name="mobilephone" class="inputedit" required maxlength="10"></br>
+			<label>Please prove you are not a robot.</label></br>
+				<hr class="afterline">
+			 	<div class="capbox">
+
+					<div id="CaptchaDiv"></div>
+					<p>51423480</p>
+
+						<div class="capbox-inner" >
+
+								Type the above number:<br>
+
+									<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" class="inputedit" required><br>
+
+					</div>
+				</div>
+
+
+			<input type="Submit" name="btn" value="SignUp" class="button" onclick="validation()" >
+			
+			<p class="message">Already Registered? <a class="login" href="#">Login</a></p>
+	</div>
+	</div>
+</form>
+
+
+</body>
+</html>

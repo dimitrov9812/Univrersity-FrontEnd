@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function validation() {
+			var name = document.getElementById('Ime').value;
+			var sName = document.getElementById('VtoroIme').value;
+			var uName = document.getElementById('username').value;
+			var eM = document.getElementById('email').value;
+			var pass = document.getElementById('passWrd').value;
+			var conPass = document.getElementById('passWrdConf').value;
+			var phone = document.getElementById('mobileNumber').value;
+			var captcha = document.getElementById('CaptchaInput').value;
+		if(name == ""||sName==""||uName == ""||eM == ""||pass == ""||conPass == ""||phone == "")
+		{
+			alert("No blank spaces allowed");
+			return false;
+		}
+		if(pass.length > 10){
+			alert("Your password must be smaller than 10 characters!");
+			return false;
+		}
+		if(pass.value != conPass.value){
+			alert("Your paswords doesn't match!");
+			return false;
+		}
+		if(number.length > 10){
+			alert("Your number must be smaller than 10 characters!");
+			return false;
+		}
+		if(name.length > 20 && name.length <8){
+			alert("Your first name must be between 8 and 20 characters!");
+			return false;
+		}
+		if(sName.length > 20 && sName.length <8){
+			alert("Your lase name must be between 8 and 20 characters!");
+			return false;
+		}
+		if(uName.length > 20 && uName.length <8){
+			alert("Your username must be between 8 and 20 characters!");
+			return false;
+		}
+		if(captcha!="51423480"){
+			alert("Wrong captcha code!");
+		}
+		return true;
+
+	}
+	</script>
+</head>
+<body>
+	
+		<div class="login-page">
+	<div class="form-style">
+			<form onsubmit="return validation()" action="welcome.html">
+			<label>Name</label></br>
+			<hr class="afterline">
+			<input type="text" placeholder="First" id ="Ime" class="inputedit">
+			<input type="text" placeholder="Last" class="inputedit" id ="VtoroIme"  ></br>
+			<label>Choose your username</label></br>
+			<hr class="afterline">
+			<input type="text" id="username" class="inputedit" maxlength="15"></br>
+			<label>E-mail adress</label></br>
+			<hr class="afterline">
+			<input type="email"  id="email" placeholder="@gmail.com" class="inputedit"  ></br>
+			<label>Password</label></br>
+			<hr class="afterline">
+			<input type="password"  id="passWrd"class="inputedit" ></br>
+			<label>Confirm Password</label></br>
+			<hr class="afterline">
+			<input type="password"  id="passWrdConf" class="inputedit" ></br>
+			<div>
+				<label>Geder</label></br>
+				<hr class="afterline">
+					<input type="radio" class="radio">Male</button>
+					<input type="radio" class="radio">Female</button>
+			</div>
+
+			
+			<label>Mobilephone</label></br>
+			<hr class="afterline">
+			<input type="text" placeholder="phone"  id="mobileNumber" class="inputedit" ></br>
+			<label>Please prove you are not a robot.</label></br>
+				<hr class="afterline">
+			 	<div class="capbox">
+
+					<div id="CaptchaDiv"></div>
+					<p>51423480</p>
+
+						<div class="capbox-inner" >
+
+								Type the above number:<br>
+
+									<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" class="inputedit"><br>
+
+					</div>
+				</div>
+			<input type="submit" name="submit" value ="submit" id="button">
+			<p class="message">Already Registered? <a class="login" href="#">Login</a></p>
+	</div>
+	</div>
+	</form>
+</body>
+</html>

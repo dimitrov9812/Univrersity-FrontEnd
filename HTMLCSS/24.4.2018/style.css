@@ -1,0 +1,63 @@
+body{
+	background:blue;
+}
+.wrapper{
+	background: pink;	
+	margin:0 auto;
+}
+.h{
+	background: yellow;
+	width: 100%;
+}
+.foot{
+	background: yellow;
+	width: 100%;
+
+}
+.h, .n,.asd,.sec,.foot{
+	border:3px solid rgba(255,255,255,255);
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+.n{
+	float:left;
+	margin-right: .4999%;
+}
+.h,.n,.sec{
+	padding: 20px 0;
+}
+.navlen{
+	background: red;
+	width: 16.999%;
+}
+
+.sec{
+	background: blue;
+	float:left;
+	margin-right: : .4999%;
+	width: 64.999%
+}
+.asd{
+	background: red;
+	float: right;
+	width:16.999%;
+	padding: 20px 0;
+}
+.p{
+	text-align: center;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	clear: both;
+	display: table;
+}

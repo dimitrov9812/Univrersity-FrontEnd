@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="C:\Users\Aspire VX\Desktop\HTMLCSS\8.05.2018\style.css">
+	<title></title>
+</head>
+<body>
+	<h1 class="centeringtext">Absolute positioning in relative containers</h1>
+	<div class="container boxborder relativecontainer-1">
+		<div class="content boxborder absolute-top-left">
+			<div>
+				<p>1</p>
+			</div>
+		</div>
+		<div class="content boxborder absolute-top-right">
+			<div>
+				<p>2</p>
+			</div>
+		</div>
+		<div class="content boxborder absolute-down-right">
+			<div>
+				<p>3</p>
+			</div>
+		</div>
+		<div class="content boxborder absolute-down-left">
+			<div>
+				<p>4</p>
+			</div>
+		</div>
+		<div class="content boxborder absolute-center">
+			<div>
+				<p>This is in the center</p>
+			</div>
+		</div>
+		<div class="content boxborder absolute-down-left2">
+			<div>
+				<p>6</p>
+			</div>
+		</div>
+		<div class="circle1">Hello I am A Circle 1</div>
+		<div class="circle2">Hello I am A Circle 1</div>
+		<div class="circle3">Hello I am A Circle 1</div>
+		<div class="circle4">Hello I am A Circle 1</div>
+
+	</div>
+</body>
+</html>

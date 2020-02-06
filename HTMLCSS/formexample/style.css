@@ -1,0 +1,81 @@
+.*{
+	box-sizing: border-box;
+}
+.leftside{
+	border:1px solid blue;
+}
+.rightside{
+	border:1px solid red;
+	padding: 10px;
+	width: 20%;	
+	margin-left: 50%;
+	margin-bottom: 50px;
+	z-index: 1;
+}
+.rightside1{
+	padding-top: 10px;
+	width: 20%;
+	margin: auto;
+}
+hr{
+	width: 80%;
+}
+.header{
+	margin: auto;
+	width: 15%;
+}
+.leftside{
+	padding: 10px;
+	width: 20%;
+	margin-left: 25%;
+}
+
+p{
+	font-size: 14px;
+}
+.leftside1{
+	padding-top: 10px;
+	width: 15%;
+	margin: auto;
+}
+.select{
+	width: 100%;
+	padding: 4px;
+
+}
+.select:hover{
+	border: 1px solid red;
+	background-color: lightgrey;
+	font-weight: bold;
+	font-color:white;
+	padding:10px;
+
+}
+.selector:hover{
+	padding: 5px;
+	border: 1px solid red;
+	background-color: lightgrey;
+	font-weight: bold;
+	font-color:white;
+
+}
+
+
+.input:hover{
+	font-color:white;
+	background-color: lightgrey;
+	border: 1px solid red;
+	padding: 8px;	
+}
+.input{
+	border:1px solid lightgrey;
+	padding:3px;
+}
+.image{	
+    width:20px;
+    height:20px;
+}
+span{
+	padding-bottom: 2px;
+}
+

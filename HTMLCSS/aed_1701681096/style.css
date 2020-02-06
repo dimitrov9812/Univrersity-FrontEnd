@@ -1,0 +1,85 @@
+`body{
+	background-color: rgb(102, 235, 249);
+}
+hr{
+	width: 80%;
+}
+.choice{
+	width: 15%;
+	margin:auto;
+}
+
+.leftside{
+	width: 12%;
+	position: absolute;
+	left:500px;
+	top:80px;
+	padding:5px;
+
+
+}
+.leftside2{
+	width: 12%;
+	position: absolute;
+	left:620px;
+	top:80px;
+	padding:5px;
+	background-color: rgb(25, 255, 79,0.8);
+}
+
+.rightside{
+	
+	width: 45%;
+	position: absolute;
+	right:120px;
+	top:60px;
+	padding: 5px;
+
+}
+option{
+	padding: 3px;
+}
+.selection{
+	width: 40%;
+	padding: 3px;
+
+}
+.register{
+	font-size: 10px;
+	margin-left: 2%;
+}
+.register2{
+	color:white;
+	font-size: 10px;
+	margin-left: 2%;
+}
+.image{
+	width: 20px;
+	height: 20px;
+}
+.selectionform2{
+	width: 100%;
+}
+.selectionform2:hover{
+	background-color: lightgrey;
+	border: 0.5px solid red;
+}
+.hover:hover{
+	background-color: lightgrey;
+	border: 0.5px solid red;
+	padding: 5px;
+	color:red;
+}
+.selection:hover{
+	background-color: lightgrey;
+	border: 0.5px solid red;
+	padding: 8px;
+}
+.input:hover{
+	background-color: lightgrey;
+	border: 0.5px solid red;
+	padding: 8px;
+}
+.input:input{
+	color:red;
+}
